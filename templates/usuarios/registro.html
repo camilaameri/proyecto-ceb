@@ -1,0 +1,63 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+
+<main role="main" class="hero" style="height:100%; width:100%">
+    <div class="container">
+        <div class="row">
+            
+            <div class="card border-0 shadow rounded-3 my-5">
+                <br>
+                <br>
+                {{form.errors}}
+                <div style="margin-top: 80px" class="card-body p-4 p-sm-5">
+                    <h2 class="card-title text-center mb-5 fw-bold iniciarsesion">Registrate</h2>
+                    <form action="" method="post">{% csrf_token %}         
+                        <div class="form-floating mb-3">
+                            <h4 class="iniciarsesion">Nombre:</h4>
+                            <input class="form-control barra" type="text" name="first_name" required id="id_first_name">
+                            <label for="id_first_name"></label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <h4 class="iniciarsesion" >Apellido:</h4>
+                            <input class="form-control barra" type="text" name="last_name" required id="id_last_name ">
+                            <label for="id_last_name"></label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <h4 class="iniciarsesion">Usuario:</h4>
+                            <input class="form-control barra" type="text" name="username" required id="id_username">
+                            <label for="id_username"></label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <h4 class="iniciarsesion">Email:</h4>
+                            <input class="form-control barra" type="text" name="email" required id="id_email">
+                            <label for="id_email"></label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <h4 class="iniciarsesion">Contraseña:</h4>
+                            <input class="form-control barra" type="password" name="password1" required id="id_password1">
+                            <label for="id_password1"></label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <h4 class="iniciarsesion">Repetir contraseña:</h4>
+                            <input class="form-control barra" type="password" name="password2" required id="id_password2">
+                            <label for="id_password2"></label>
+                        </div>
+                        
+                        <!--{{form.as_p}}-->
+                        <div class="d-flex justify-content-center">
+                            <p><input type="submit" class="btn btn-primary btn-login text-uppercase fw-bold, enviar" value="Confirmar"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+{% endblock contenido %}
+

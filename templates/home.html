@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+    <!-- ======= About Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1>Comunidades Eclesiales de Base</span></h1>
+              <h2>Diócesis San Roque - J.J.Castelli-Chaco</h2>
+    
+              <div class="btns">
+                {% if user.is_authenticated == False %}
+                    <a href="{% url 'usuarios:registro' %}" class="btn-menu animated fadeInUp scrollto">Registrarse</a>
+                    <a class="btn-menu animated fadeInUp scrollto" href="{% url 'login' %}">Iniciar sesión</a>
+                {% else %}
+                    <a class="btn-menu animated fadeInUp scrollto" href="{% url 'logout' %}">Cerrar sesión</a>
+                {% endif %}
+              </div>
+            </div>
+           
+         
+    
+          </div>
+        </div>
+    </section><!-- End Hero -->
+    
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="about-img">
+                    <img  src="{% static 'img/el angel.jfif' %}" alt="100">
+                </div>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                <h3>¡Pocho Vive!</h3>
+                <p class="fst-italic">
+                    A 18 años NO OLVIDAMOS NO PERDONAMOS LA LUCHA SIGUE. ¡BAJEN LAS ARMAS!! 
+                </p>
+                <ul>
+                    <li><i class="bi bi-check-circle"></i> 2001-19 de diciembre- 2019</li>
+                </ul>
+                <p>
+                        Pocho era el Taller de Alas de Colibríes que canta Silvio...era un horno de pan,...era el principito,... parecía una carpa para dos personas pero cuando lo conocías era un camping cincuenta estrellas,...era un despertador....un multiplicador de panes y guisos,...un santo,...era como Cristo,... como el Che...un amigo, un hermano, un compañero...el compañero,...era como un padre,...era el mate cocido calentito para el alma,...el espejo para ver todo lo que nos falta comprometernos... un quijote en bicicleta que no perdía el tiempo con los molinos de viento,...era el chef guisero de la solidaridad y la cebolla,...era el puente, el durazno y el país de benedetti pero las tres cosas juntas, era la chata que te levanta en la ruta después de hacer diez horas dedo,...era lavioladesantana, charangodejaime, violindepetecoydeBecho, bandoneondepichucopiazolayjuarez,.. ..que se yo era todo eso y no se fue: lo fueron, lo mataron, lo fusilaron, lo empalaron, lo crucificaron como al otro flaco que nunca anduvo en bicicleta, los mismos de siempre, los mismos que asesinaron, torturaron y desaparecieron a toda una generación de hormigas.
+                        Y ahora andamos con el Pocho por las calles, cargándolo en las pancartas junto a Juan, a Yanina, a Graciela y a todas las Hormigas ejecutadas, cargándolo en las pancartas porque se quedó sin sangre de tanto hacer el amor, como dice Varón.
+                       
+                </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+      
+
+{% endblock contenido %}
+
+
+
+{% load static %}
+
+
+
+    

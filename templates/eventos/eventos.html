@@ -1,0 +1,66 @@
+{% extends "base.html"%}
+{% load static %}
+
+
+
+{% block contenido %}
+
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-6 order-2 order-lg-2" style="background: dimgrey; padding: 0.5em 0; opacity: 0.9; border-radius: 15px; margin-top: 159px; height: fit-content; margin-bottom: 20px;">  
+                <div class="calendar__info">
+                    <div class="calendar__prev" id="prev-month">&#9664;</div>
+                    <div class="calendar__month" id="month"></div>
+                    <div class="calendar__year" id="year"></div>
+                    <div class="calendar__next" id="next-month">&#9654;</div>
+                </div>
+        
+                <div class="calendar__week">
+                    <div class="calendar__day calendar__item">Lun</div>
+                    <div class="calendar__day calendar__item">Mar</div>
+                    <div class="calendar__day calendar__item">Mie</div>
+                    <div class="calendar__day calendar__item">Jue</div>
+                    <div class="calendar__day calendar__item">Vie</div>
+                    <div class="calendar__day calendar__item">Sab</div>
+                    <div class="calendar__day calendar__item">Dom</div>
+                </div>
+        
+                <div class="calendar__dates" id="dates"></div>
+            </div>
+
+        <section id="menu" class="menu section-bg col-lg-6 order-1 order-lg-1">
+            <div class="container" data-aos="fade-up">
+            
+                <div class="section-title">
+                    <br>
+                    
+                </div>
+                <div class="section-title">
+                    <p>Eventos</p>
+                </div>
+                <!--Acá tendría que ir el for-->
+            {% for actividad in actividades %}
+                <div class="card" style="width: 30rem;">
+                    <img src="{{ actividad.imagen.url }}" class="card-img-top" alt="...">  <!--Imagen-->
+                    <div class="card-body">
+                        <h5>{{ actividad.fecha }}</h5> <!--Fecha-->
+                        <h2 class="card-title">{{ actividad.nombre }}</h2> <!--Titulo-->
+                        <p class="card-text">Lugar: {{ actividad.lugar }}</p>
+                        <a href="{% url 'eventos:detalleEventos' actividad.pk %}" class=" btn-menu animated fadeInUp scrollto">Ver más</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+            {% endfor %}
+          <!--Acá terminaría el for-->
+        </section>
+    </div>         
+    
+    <script type='text/javascript' src="{% static 'js/scripts.js' %}"></script>
+
+{% endblock contenido %}

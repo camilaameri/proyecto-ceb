@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<section id="specials" class="specials">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <br>
+            <br>
+            <br> 
+        </div>
+        <div class="section-title">
+            <h2>{{ notis.created }}</h2> <!--Podría ir fecha de la noticia-->
+            <p>{{ notis.titulo }}</p> <!-- Titulo de la noticia-->
+        </div>
+
+     
+        <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                    <div class="row">
+                        <div class="col-lg-12 details order-2 order-lg-1">
+                            <img src="{{notis.imagen.url}}" class="" alt="" style="padding-bottom: 40px;">
+                            <br>
+                            <p>{{notis.descripcion}}</p>
+                            <br>
+                            {% if notis.autor %}
+                                <p>{{notis.autor}}</p>
+                                <br>
+                            {% else %}
+                                <p>Autor anónimo.</p>
+                                <br>
+                            {% endif %}
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12 details order-2 order-lg-1">
+                                    <h3>Comentarios</h3>
+                                {% if user.is_authenticated %}
+                                    <section class="mb-5">
+                                        <div class="card bg-ligth">
+                                            <div class="card-body">
+                                                <!-- Comment form-->
+                                                <div class=" mb-4">
+                                                    {% for x in notis.obtener_comentarios %}
+                                                    <!-- VISUALIZACIONES DE COMENTARIOS -->
+                                                    <div class="ms-3">
+                                                        <div class="fw-bold">{{x.usuario}}</div>
+                                                        <p>{{x.texto}}</p>
+                                                        <p>{{x.creado}}</p>
+                                                    </div>
+                                                    <!-- FIN VISUALIZACIONES DE COMENTARIOS -->
+                                                    <br>
+                                                    <br>
+                                                    {% endfor %}
+                                                </div>
+                                                <form method="POST" action="{% url 'noticias:agregar_comentario' notis.pk %}" class="mb-4">{% csrf_token %}
+                                                    <!-- <textarea class="form-control" rows="3" placeholder="Escribe un comentario..."></textarea> -->
+                                                    <input name="Coment" type="text" class="form-control textcomentarios textcomentarios" required placeholder="Escribe un comentario..."></input>
+                                                    <br>
+                                                    <br>
+                                                    <button type="submit" class="comentarios comentarios">Enviar comentario</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </section>
+                                {% else %}
+                                    <p>Debes iniciar sesion para comentar. <a href="{% url 'login' %}">Iniciar Sesión</a></p>
+                                {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock contenido %}
+
+{% load static %}
+
+

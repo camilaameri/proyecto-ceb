@@ -1,0 +1,30 @@
+{% extends "base.html"%}
+{% load static %}
+
+
+
+{% block contenido %}
+<br>
+<br>
+<br>
+<br>
+    <div class="container" style="display: flex; justify-content: center;">
+        
+        <div class="card" style="width: 35rem;">
+            <h2></h2> <!--Titlo-->
+            <img src="{{activ.imagen.url}}" class="card-img-top" alt="..."> <!--Imagen del evento-->
+            <div class="card-body">
+                <h5>{{activ.fecha}}</h5> <!--Fecha-->
+                <h2>{{activ.nombre}}</h2>
+                <br>
+                <p class="card-text">{{activ.descripcion}}</p> <!-- descripcion-->
+                <br>
+                <p class="card-text">Instructor/a: {{activ.instructor}}</p>
+                <p class="card-text">Lugar: {{activ.lugar}}</p>
+            </div>
+          </div>
+          
+    </div>
+    <br>
+    <br>
+{% endblock contenido %}

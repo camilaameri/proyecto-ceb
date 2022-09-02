@@ -1,0 +1,435 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+
+<!--HOME PRINCIPAL-->
+
+
+
+
+    <!-- CARRUSEL FOTOS -->
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/Justicia-social-Naciones-Unidas.jpg' %}" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/pueblos.jpg' %}" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/planeta.jfif' %}" class="d-block w-100">
+          </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'img/Justicia-social-Naciones-Unidas.jpg' %}" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/pueblos.jpg' %}" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/planeta.jfif' %}" class="d-block w-100">
+              </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+       
+        <!-- <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Comunidades Eclesiales de Base</h1>
+                <p class="lead mb-0">Castelli - Chaco - Argentina</p>
+            </div>
+        </div> -->
+    </header>
+    <!-- TITULO PRINCIPAL -->
+    <!-- <h1>Comunidades Eclesiales de Base (CEBs)
+        Castelli
+    </h1> -->
+    
+
+
+    
+    <!-- Page content-->
+    <div class="container">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8">
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted">January 1, 2022</div>
+                        <h2 class="card-title">Featured Post Title</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                        <a class="btn btn-primary" href="#!">Read more →</a>
+                    </div>
+                </div>
+                <!-- Nested row for non-featured blog posts-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination-->
+                <nav aria-label="Pagination">
+                    <hr class="my-0" />
+                    <ul class="pagination justify-content-center my-4">
+                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Web Design</a></li>
+                                    <li><a href="#!">HTML</a></li>
+                                    <li><a href="#!">Freebies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">JavaScript</a></li>
+                                    <li><a href="#!">CSS</a></li>
+                                    <li><a href="#!">Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Side Widget</div>
+                    <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock contenido %}
+
+
+
+{% load static %}
+
+
+<!--BASE HTML-->
+
+
+{% load static %}
+
+
+<!--HTML BASE PARA TODAS LAS APPS-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BLOG</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/nosotros.css' %}">
+</head>
+
+
+<body>
+    <!-- LOGIN -->
+
+    <!--{% if user.is_authenticated %}
+                <span>Bienvenido {{user.username}}</span>
+                <a href="{% url 'logout' %}">CERRAR SESION</a>
+            {% else %}
+                <a href="{% url 'login' %}">INICIAR SESION</a>
+            {% endif %}-->
+
+	<!-- LOGO -->
+
+	<!-- <img src="{% static 'img/logo.png' %}" width="300" height="200"> #pendiente -->
+
+	<!-- MENU/ BOTONES PARA LAS APPS-->
+	<!-- <div class="div-menu">
+		<div class="div-menu">
+	    <button onclick="location.href='{% url 'sobrenosotros:sobreNosotros' %}'" type="button" class="button">Acerca de nosotros</button>
+	    <button type="button" class="button">Fotos</button>
+	    <button type="button" class="button">Noticias</button>
+	    <button type="button" class="button">Eventos</button>
+	    <button type="button" class="button">Contacto</button>
+	    </div>
+		</div>
+	</div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#!">Comunidades Eclesiales de Base</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'sobrenosotros:sobreNosotros' %}">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Eventos</a></li>
+                    
+
+                    {% if user.is_authenticated %}
+                    <span>Bienvenido {{user.username}}</span>
+                    <!--<a href="{% url 'logout' %}">CERRAR SESION</a>-->
+                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">cerrar sesion</a></li>
+                    {% else %}
+                    <!--<a href="{% url 'login' %}">INICIAR SESION</a>-->
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">iniciar sesion</a></li>
+                    {% endif %}
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<!-- FIN MENU -->
+
+    <!-- <footer>
+        <a href="#carouselExampleSlidesOnly">Ir al Comienzo</a>
+        <br>
+        <a href="https//www..google.com" class="btn btn-primary">Ir a google</a>
+        <br>
+        <a target="_blank" href="https://www.facebook.com/groups/498186250237283">Grupo de Facebook</a>
+        <br>
+        <a target="_blank" href="https://www.instagram.com/Elangeldelabicicletacastelli">Instagram</a>
+        <br><br>
+
+        Copyright ©
+        <br>
+        Todos los derechos reservados
+    </footer> -->
+
+   
+
+	{% block contenido %}
+
+	{% endblock contenido %}
+
+     <!-- Footer-->
+     <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+    </footer>
+     <!-- Bootstrap core JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Core theme JS-->
+     <script src="js/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+#topbar {
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    z-index: 996;
+  }
+  
+  #topbar.topbar-scrolled {
+    top: -40px;
+  }
+  
+  #topbar .contact-info i {
+    font-style: normal;
+    color: #d9ba85;
+  }
+  
+  #topbar .contact-info i span {
+    padding-left: 5px;
+    color: #fff;
+  }
+  
+  #topbar .languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #cda45e;
+  }
+  
+  #topbar .languages ul a {
+    color: white;
+  }
+  
+  #topbar .languages ul li+li {
+    padding-left: 10px;
+  }
+  
+  #topbar .languages ul li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    content: "/";
+  }
+  
+
+   
+    
+
+
+
+
+
+
+  <img class="imagenprincipal" src="{% static 'img/ayudar-a-los-demas2.jpg'%}">
+
+  <h2 class="titulo">Quienes somos<h2>
+   <h1 class="descripcion">Somos una instancia misionera de la iglesia, próxima a las personas en los barrios más humildes de la ciudad y en la zona rural, con el objetivo de hacer visible la unión entre la fe y la vida. </h1>
+<br>
+
+<h2>Nuesta mision</h2> 
+<h1 class="objetivo">Formamos parte de la lucha por la Justicia Social, los Derechos Humanos, de Género y de nuestros Pueblos Originarios, llevando adelante obras caritativas y solidarias, articulando el compromiso cristiano.
+</h1>
+<br>
+<h2>Que hacemos</h2>
+
+<br>
+
+<div>
+    <img class="educacionlogo" src="{% static 'img/educacionlogo.jpg'%}">
+
+    <h1 class="titulosactividades">Educación, Capacitacion y Asesoría​</h1>
+    <h1 class="actividades">Educamos, capacitamos, fomentando la lucha por la Justicia Social y la fe, realizando: </h1>
+    <h1 class="actividades2">⦁   Talleres de Derechos humanos</h1>
+    <h1 class="actividades2">⦁	Talleres sobre Violencia de Género</h1> 
+    <h1 class="actividades2">⦁	Talleres sobre Adicciones</h1>
+    <h1 class="actividades2">⦁	Talleres de Emprendimiento</h1>
+    <h1 class="actividades2">⦁	Huerta Orgánica </h1>
+
+    <img class="Talleres" src="{% static 'img/talleres.jpg'%}">
+    <img class="Talleres1" src="{% static 'img/talleres2.jpg'%}">
+    <img class="Talleres2" src="{% static 'img/talleres3.jpg'%}">
+
+</div>
+<br>
+
+<div>
+    <img class="icono_seguridad" src="{% static 'img/icono_seguridad.jpg'%}">
+
+    <h1 class="titulosactividades">Asistencia y acompañamiento</h1>
+    <h1 class="actividades">⦁	Charlas sobre inquietudes y problemas de zonas desfavorables para luego llevarlas con la autoridad correspondiente.</h1>
+    <h1 class="actividades2">⦁	Encuentros con los Jóvenes.</h1>
+    <img class="acompañamiento1" src="{% static 'img/acompañamiento1.jpg'%}">
+    <img class="acompañamiento2" src="{% static 'img/acompañamiento2.jpg'%}">
+
+
+</div>
+
+<br>
+<div>
+    <img class="eventoslogo" src="{% static 'img/eventoslogo.jpg'%}">
+
+    <h1 class="titulosactividades">Difusión y organizacion de eventos</h1>
+    <h1 class="actividades2">⦁   Organizar Fiestas Patronales</h1>
+    <img class="eventos1" src="{% static 'img/eventos1.jpg'%}">
+    <img class="eventos" src="{% static 'img/eventos2.jpg'%}">
+    <img class="eventos" src="{% static 'img/eventos3.jpg'%}">
+</div>
+
+
+<div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+    <div class="historia-img">
+      <img src="assets/img/historia.jpg" alt="">
+    </div>
+</div>
+
+<ul>
+    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+  </ul>
